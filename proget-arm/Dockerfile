@@ -1,4 +1,4 @@
-FROM szb640/mono-arm
+FROM szb640/mono-arm:5.2.0.215
 
 EXPOSE 80
 
