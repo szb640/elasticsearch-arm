@@ -11,5 +11,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian jessie/snapshots/$MON
   && apt-get install -y mono-runtime \
   && rm -rf /var/lib/apt/lists/* /tmp/*
 
-RUN apt-get install -y binutils curl mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl \
+RUN apt-get update \
+  && apt-get install -y binutils curl mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl \
   && rm -rf /var/lib/apt/lists/* /tmp/*
