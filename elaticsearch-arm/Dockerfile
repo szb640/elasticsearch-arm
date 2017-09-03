@@ -1,4 +1,4 @@
-FROM scaleway/java:armhf-latest
+FROM arm32v7/openjdk:8-jre
 
 ENV GOSU_VERSION 1.10
 RUN set -x \

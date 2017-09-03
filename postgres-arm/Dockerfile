@@ -1,6 +1,6 @@
 # Based on https://github.com/docker-library/postgres/blob/master/9.4/Dockerfile
 
-FROM resin/rpi-raspbian:latest
+FROM arm32v7/debian:jessie
 
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
 
