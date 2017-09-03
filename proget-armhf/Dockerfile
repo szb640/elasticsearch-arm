@@ -1,6 +1,8 @@
-FROM szb640/mono-arm:5.2.0.215
+FROM arm32v7/mono
 
 EXPOSE 80
+
+RUN apt-get update && apt-get install xz-utils -y
 
 RUN mkdir -p /usr/local/proget && curl "https://s3.amazonaws.com/cdn.inedo.com/downloads/proget-linux/ProGet.4.7.14.tar.xz" | tar xvJC /usr/local/proget
 
